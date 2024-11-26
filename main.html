@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Baby Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Future Baby Generator</h1>
+        <form id="babyForm">
+            <div class="form-group">
+                <label for="parent1">Parent 1 Image:</label>
+                <input type="file" id="parent1" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="parent2">Parent 2 Image:</label>
+                <input type="file" id="parent2" accept="image/*" required>
+            </div>
+            <button type="submit">Generate Baby</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Generated Baby</h2>
+            <img id="babyImage" src="" alt="Your Future Baby" style="display:none;">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
